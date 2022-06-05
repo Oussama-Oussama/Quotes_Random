@@ -1,0 +1,68 @@
+#parent {
+  background: #0f0c29;
+  background: -moz-radial-gradient(center, #0f0c29, #302b26, #24243e);
+  background: -webkit-radial-gradient(center, #0f0c29, #302b26, #24243e);
+  background: radial-gradient(ellipse at center, #0f0c29, #302b26, #24243e);
+}
+.container {
+  width: 1200px;
+  margin: auto;
+}
+.quotes-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.inner-quotes-container {
+  width: 900px;
+  min-height: 400px;
+  color: gray;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: center;
+  text-align: center;
+  padding: 0px 25px;
+  border-radius: 10px;
+  border: 10px #0f0c29 solid;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.9);
+}
+.inner-quotes-container p {
+  font-size: 2em;
+  color: black;
+  font-family: "Dancing script", cursive;
+}
+button {
+  color: white;
+  background-color: #0f0c29;
+  border: #302b26 1px solid;
+  padding: 10px;
+  outline: none;
+}
+.quote-btn {
+  padding-top: 25px;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 900px) {
+  .inner-quotes-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .inner-quotes-container p {
+    font-size: 1.2rem;
+  }
+  .inner-quotes-container h3 {
+    font-size: 1.5rem;
+  }
+}
